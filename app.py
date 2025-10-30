@@ -40,7 +40,7 @@ GENRE_COLUMNS = [
 def home():
     return render_template("index.html")
 
-@app.route('/predict', methods=['POST'])
+@app.route('/predict', methods=['POST', 'POST'])
 def predict():
     try:
         # === Collect Inputs ===
